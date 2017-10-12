@@ -10,9 +10,6 @@ unsigned long bTime = 0;
 unsigned long yTime = 0; 
 unsigned long gTime = 0;
 
-//Random def for testing
-unsigned long Timer = 0; 
-
 
 void setup()
 {
@@ -29,11 +26,8 @@ void setup()
 }
 
 void loop(){ 
-  Timer = Timer + 1; //for testing - remove! 
   incrTimers();
   testTimers();
-  //Particle.publish("job"); //for testing
-  //delay(1);
 }
 
 void incrTimers(){
